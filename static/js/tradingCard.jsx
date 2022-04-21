@@ -52,12 +52,16 @@ const tradingCardData = [
 ];
 
 
-console.log(tradingCardData);
+for (const currentCard of tradingCardData) {
+  console.log(currentCard.name, currentCard.skill)
+}
 
-for (const card of tradingCardData){
-    console.log(tradingCardData.items()); 
-  }
-
+// this works
+// for (let i = 0; i < tradingCardData.length; i++) {
+//   for (const key of Object.keys(tradingCardData[i])){
+//       console.log(`${key}: ${tradingCardData[i][key]}`); 
+//     }
+//   }
 
 //   for (const card of tradingCardData); 
 //     console.log(tradingCardData['card']['name']); 
